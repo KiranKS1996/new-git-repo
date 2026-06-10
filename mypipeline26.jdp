@@ -30,9 +30,9 @@ pipeline {
                 withSonarQubeEnv('Sonarqube') {
                     dir('backend') {
                         sh '''
-                           mvn clean verify sonar:sonar \
-  -Dsonar.projectKey=text-pj123 \
-  -Dsonar.projectName='text-pj123' \
+                          mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=proj1234 \
+  -Dsonar.projectName='proj1234' \
                         '''
                     }
                 }
